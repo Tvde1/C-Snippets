@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>TestMethod</Title>
+            <Description>Creates a new test method.</Description>
+            <Author>Tim van den Essen</Author>
+            <Shortcut>tm</Shortcut>
+        </Header>
+        <Snippet>
+            <Code Language="CSharp">
+                <![CDATA[[TestMethod]
+                    public void $Name$()
+                    {
+                        $selected$
+                    }
+                ]]>
+            </Code>
+            <Declarations>
+                <Literal>
+                    <ID>Name</ID>
+                    <Default>TestMethod</Default>
+                    <ToolTip>The name of the test method.</ToolTip>
+                </Literal>
+            </Declarations>
+            <Import>
+                <Namespace>System</Namespace>
+            </Import>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>
